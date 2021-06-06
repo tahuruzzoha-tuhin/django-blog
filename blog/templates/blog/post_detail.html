@@ -1,0 +1,31 @@
+{% extends "blog/base.html" %}
+{% block content %}
+
+<div class="content-section">
+
+    <!-- Author information -->
+    
+    <hr>
+
+    <!-- Post information -->
+    <div>
+        <h2><span class="article-title" style="text-align: center !important;" >{{ post.title }}</span></h2>
+
+        <p class=" text-muted">Author: Linux Bangla | {{ post.created_on }}</p>
+    </div>
+    <hr>
+
+    <!-- Preview Image -->
+   
+
+    <!-- Post Content -->
+    <p class="lead" style="">{{ object.content|safe }}</p>
+    <hr>
+
+    
+
+
+  
+
+</div>
+{% endblock content %}
